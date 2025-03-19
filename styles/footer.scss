@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    // border: 1px solid red;
+}
+
+footer {
+    height: 61.1vh;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.Redes_sociais {
+    background-color: #222222;
+    height: 5.7vh;
+    padding: 4.28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+    div {
+        display: flex;
+    }
+
+    a {
+        padding: 2vh;
+        background-color: #000000;
+        height: 5.35vh;
+        width: 5.35vh;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+        border-radius: 2.85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            fill: #ffffff;
+            height: 4.5vh;
+            width: 4.5vh;
+        }
+
+        &:hover {
+            background-color: transparent;
+
+            svg {
+                fill: #11D135;
+            }
+        }
+
+        &:nth-child(2), &:nth-child(3), &:last-child {
+            margin-left: 1.76vw;
+        }
+    }
+}
+
+.Informações, .Dados {
+    background-color: #000000;
+}
+
+.Informações {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.34vw 0;
+
+    div {
+        margin-left: 10px;
+        width: 14.9vw;
+        height: 40.4vh;
+
+        &:first-child, &:nth-child(2), &:nth-child(3) {
+            h3 { 
+                font-weight: 500;
+                font-style: normal;
+                font-size: 1.5vw;
+                line-height: 1.75vw;
+                padding-left: 0.94vw;
+            }
+    
+            ul {
+                padding: 0.59vw 0;
+                list-style: none;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.2vw;
+                line-height: 1.3vw;
+                display: flex;
+                padding: 2vh 0.94vw;
+                border-radius: 0.6vw;
+    
+                &:hover {
+                    color: #11D135;
+                    background-color: #222222;
+                }
+            }    
+        }
+
+        &:nth-child(4) {
+            width: 21.8vw;
+            height: 28.7vh;
+            padding: 1.45vh;
+            text-align: center;
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: right;
+
+                h5 {
+                    width: 100%;
+                    text-align: right;
+                    margin-right: 3vw;
+                }
+
+                a {
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.88vw;
+                line-height: 1.39vw;
+            }
+
+            a {
+                &:first-child {
+                    img {
+                        width: 7.33vw;
+                        height: 12.3vh;
+                    }
+                }
+                &:nth-child(2) {
+                    img {
+                        width: 5.5vw;
+                        height: 12.4vh;
+                    }
+                }
+                &:nth-child(4), &:last-child {
+                    img {
+                        width: 6.37vw;
+                        height: 5.2vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Dados {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 5.7vh 0;
+
+    p {
+        margin-bottom: 1.5vh;
+        font-weight: 400;
+        font-size: 1.1rem
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
