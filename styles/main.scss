@@ -1,6 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 main {
-    background: linear-gradient(to bottom, rgba(234, 234, 234, 0) 450px, #612839 550px) center top, url("../imgs/background.jpg");
+    background: linear-gradient(to bottom, rgba(234, 234, 234, 0) 450px, #612839 8%) center top, url("../imgs/background.jpg");
     background-repeat: no-repeat;
     height: 1170vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.image {
+    margin-left: 11%;
+    width: 80.55vw;
+    height: 65vh;
+    margin-top: 4%;
+    background-size: 80.55vw 65vh;
+    background-image: url("../imgs/banner.png");
+    background-repeat: no-repeat;
+    position: relative;
+
+    .border {
+        width: 100%;
+        height: 2.59%;
+        background-image: url("../imgs/borderticket.png");
+        background-size: auto 100%;
+        transform: rotate(360deg);
+        position: absolute;
+        background-repeat: repeat-x;
+        bottom: 0%;
+    }
+}
+
+.conteudo {
+    z-index: 5;
+    margin-left: 11%;
+    width: 80.55vw;
+    height: 1090vh;
+    background-color: #ffffff;
+}
+
+.banner {
+    margin-left: 10%;
+    display: flex;
+    width: 80%;
+    margin-top: 1.5%;
+    
+
+    .card {
+        padding: 0.9vw;
+        border-radius: 0.73vw;
+        width: 20.37vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 2px 9px 0 rgba(158, 184, 209, .41);
+        
+        img {
+            width: 20.37vw;
+            height: 20.37vw;
+        }
+
+        div {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            padding-top: 2.7%;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #6C757D; 
+            font-size: 1.2rem;
+            font-weight: 400;
+
+            svg, img {
+                width: 1.5vw;
+                height: 1.5vw;
+                fill: #6C757D; /* Para SVGs inline */
+                color: #6C757D;
+            }
+        }
+    }
+
+    .conteudo {
+        width: 70%;
+        margin-left: 1%;
+        height: 55.6vh;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 1.5% 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+
+            &:nth-child(2) {
+                font-size: 2rem;
+            }
+
+            &:last-child {
+                font-size: 1.3rem;
+            }
+
+            svg {
+                width: 1.8%;
+                height: 1.8%;
+            }
+        }
+    }
+}
+
+.links {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+
+    a {
+        background-color: #f8f9fa;
+        padding: 0.8% 1.2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.25rem;
+        width: 7.61vw;
+        font-weight: 400;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: black;
+        margin-right: 0.5%;
+
+        &:hover {
+            background-color: #E2E6EA;
+        }
+    }
+
+    svg {
+        margin-right: 10%;
+        width: 1.5vw;
+        height: 1.5vw;
+    }
 }
